@@ -1,1 +1,3 @@
 sae-lens
+numpy
+datasets
