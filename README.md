@@ -22,7 +22,7 @@ We have to prove that the feature "score" of Mary should be the highest. This is
 - Compare the results to see whether MCTS can be used to find the best possible answer for IOI task
 
 ## Further Work
-Let's see how this thing does.
+Update: At least the initial version of the code works. You can do basic MCTS on SAEs, but what exactly we are getting from it is still being worked on.
 
 
 ## Intermediate Progress
@@ -35,3 +35,7 @@ Let's see how this thing does.
 - [x] In expanded latent space, we can use the feature map + MCTS to "make better decisions".
 - [x] Other than that, we can also do feature importance and pattern recognition, which I'm exploring using a genomic data example. 
 - [x] Desgined an experiment to study feature importance in IOI task.
+- [x] Got the IOI data from HF, and used a subset of it to make and load dataset.
+- [x] There was a problem with the `tokenize_and_concatenate` function in Transformer Lens utils for small datasets, so fixed a local patch for it.
+- [x] Tried running some experiments, and with all the assumtions we have, it is working, although there are a lot of caveats.
+- [] Need to understand how exactly we can leverage full powers of MCTS.
